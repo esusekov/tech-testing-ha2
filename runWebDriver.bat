@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-2.43.1.jar -host 127.0.0.1 -port 5555 -role node -hub http://127.0.0.1:4444/grid/register -Dwebdriver.chrome.driver="./chromedriver" -browser browserName=chrome,maxInstances=1 -browser browserName=firefox,maxInstances=1

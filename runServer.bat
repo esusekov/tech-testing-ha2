@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-2.43.1.jar -host 127.0.0.1 -port 4444 -role hub
