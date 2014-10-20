@@ -1,9 +1,16 @@
+import urlparse
+
 
 class BasePage(object):
-    url = None
+    BASE_URL = 'https://target.mail.ru'
+    PATH = ''
 
     def __init__(self, driver):
         self.driver = driver
+
+    def open(self):
+        url = urlparse.urljoin(self.BASE_URL, self.PATH)
+        self.driver.get(url)
 
     def fill_form_by_css(self, form_css, value):
         elem = self.driver.find(form_css)
