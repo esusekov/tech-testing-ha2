@@ -18,7 +18,7 @@ class MainTestCase(unittest.TestCase):
     def setUp(self):
 
         self.LOGIN = 'tech-testing-ha2-30@bk.ru'
-        self.PASSWORD = os.environ.get('TTHA2PASSWORD', 'Pa$$w0rD-30')
+        self.PASSWORD = os.environ.get('TTHA2PASSWORD')
         self.DOMAIN = '@bk.ru'
 
         browser = os.environ.get('TTHA2BROWSER', 'CHROME')
